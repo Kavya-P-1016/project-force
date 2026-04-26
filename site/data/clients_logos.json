@@ -1,0 +1,148 @@
+{
+  "clients": [
+    {
+      "company_name": "Thermax",
+      "logo_url": "https://logo.clearbit.com/thermaxglobal.com",
+      "company_url": "https://www.thermaxglobal.com",
+      "industry": "Energy & Environment",
+      "logo_source": "Project Force provided client panel + official company website reference",
+      "local_file": "/img/clients/client-01.png"
+    },
+    {
+      "company_name": "Ion Exchange",
+      "logo_url": "https://logo.clearbit.com/ionexchangeglobal.com",
+      "company_url": "https://www.ionexchangeglobal.com",
+      "industry": "Water Treatment",
+      "logo_source": "Project Force provided client panel + official company website reference",
+      "local_file": "/img/clients/client-02.png"
+    },
+    {
+      "company_name": "Mann+Hummel",
+      "logo_url": "https://logo.clearbit.com/mann-hummel.com",
+      "company_url": "https://www.mann-hummel.com",
+      "industry": "Filtration",
+      "logo_source": "Project Force provided client panel + official company website reference",
+      "local_file": "/img/clients/client-03.png"
+    },
+    {
+      "company_name": "Aquatech",
+      "logo_url": "https://logo.clearbit.com/aquatech.com",
+      "company_url": "https://www.aquatech.com",
+      "industry": "Water Technology",
+      "logo_source": "Project Force provided client panel + official company website reference",
+      "local_file": "/img/clients/client-04.png"
+    },
+    {
+      "company_name": "Reliance Industries",
+      "logo_url": "https://logo.clearbit.com/ril.com",
+      "company_url": "https://www.ril.com",
+      "industry": "Industrial Conglomerate",
+      "logo_source": "Project Force provided client panel + official company website reference",
+      "local_file": "/img/clients/client-05.png"
+    },
+    {
+      "company_name": "JSW",
+      "logo_url": "https://logo.clearbit.com/jsw.in",
+      "company_url": "https://www.jsw.in",
+      "industry": "Steel & Energy",
+      "logo_source": "Project Force provided client panel + official company website reference",
+      "local_file": "/img/clients/client-06.png"
+    },
+    {
+      "company_name": "GE",
+      "logo_url": "https://logo.clearbit.com/ge.com",
+      "company_url": "https://www.ge.com",
+      "industry": "Engineering",
+      "logo_source": "Project Force provided client panel + official company website reference",
+      "local_file": "/img/clients/client-07.png"
+    },
+    {
+      "company_name": "AM/NS India",
+      "logo_url": "https://logo.clearbit.com/amns.in",
+      "company_url": "https://www.amns.in",
+      "industry": "Steel",
+      "logo_source": "Project Force provided client panel + official company website reference",
+      "local_file": "/img/clients/client-08.png"
+    },
+    {
+      "company_name": "Essar",
+      "logo_url": "https://logo.clearbit.com/essar.com",
+      "company_url": "https://www.essar.com",
+      "industry": "Infrastructure",
+      "logo_source": "Project Force provided client panel + official company website reference",
+      "local_file": "/img/clients/client-09.png"
+    },
+    {
+      "company_name": "CPRI",
+      "logo_url": "https://logo.clearbit.com/cpri.res.in",
+      "company_url": "https://cpri.res.in",
+      "industry": "Power Research",
+      "logo_source": "Project Force provided client panel + official company website reference",
+      "local_file": "/img/clients/client-10.png"
+    },
+    {
+      "company_name": "Tata Power",
+      "logo_url": "https://logo.clearbit.com/tatapower.com",
+      "company_url": "https://www.tatapower.com",
+      "industry": "Power & Utilities",
+      "logo_source": "Project Force provided client panel + official company website reference",
+      "local_file": "/img/clients/client-11.png"
+    },
+    {
+      "company_name": "Deendayal Port (Kandla)",
+      "logo_url": "https://logo.clearbit.com/deendayalport.gov.in",
+      "company_url": "https://deendayalport.gov.in",
+      "industry": "Port Authority",
+      "logo_source": "Project Force provided client panel + official company website reference",
+      "local_file": "/img/clients/client-12.png"
+    },
+    {
+      "company_name": "ABB",
+      "logo_url": "https://logo.clearbit.com/abb.com",
+      "company_url": "https://global.abb.com",
+      "industry": "Automation",
+      "logo_source": "Project Force provided client panel + official company website reference",
+      "local_file": "/img/clients/client-13.png"
+    },
+    {
+      "company_name": "NTPC",
+      "logo_url": "https://logo.clearbit.com/ntpc.co.in",
+      "company_url": "https://www.ntpc.co.in",
+      "industry": "Power Generation",
+      "logo_source": "Project Force provided client panel + official company website reference",
+      "local_file": "/img/clients/client-14.png"
+    },
+    {
+      "company_name": "Adani",
+      "logo_url": "https://logo.clearbit.com/adani.com",
+      "company_url": "https://www.adani.com",
+      "industry": "Industrial Conglomerate",
+      "logo_source": "Project Force provided client panel + official company website reference",
+      "local_file": "/img/clients/client-15.png"
+    },
+    {
+      "company_name": "Somany",
+      "logo_url": "https://logo.clearbit.com/somanyceramics.com",
+      "company_url": "https://www.somanyceramics.com",
+      "industry": "Building Materials",
+      "logo_source": "Project Force provided client panel + official company website reference",
+      "local_file": "/img/clients/client-16.png"
+    },
+    {
+      "company_name": "Indo Dutch",
+      "logo_url": "https://logo.clearbit.com/indeutschgroup.com",
+      "company_url": "https://indeutschgroup.com",
+      "industry": "Industrial Services",
+      "logo_source": "Project Force provided client panel + official company website reference",
+      "local_file": "/img/clients/client-17.png"
+    },
+    {
+      "company_name": "BEIL",
+      "logo_url": "https://logo.clearbit.com/beil.co.in",
+      "company_url": "https://www.beil.co.in",
+      "industry": "Environmental Engineering",
+      "logo_source": "Project Force provided client panel + official company website reference",
+      "local_file": "/img/clients/client-18.png"
+    }
+  ]
+}
