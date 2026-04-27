@@ -32,11 +32,31 @@
       </div>
     </header>
 
+    <section class="blog-toolbar" id="blog-toolbar" aria-label="Filter and search blog posts">
+      <div class="container">
+        <div class="blog-toolbar-inner">
+          <div class="blog-filter-list" role="tablist" aria-label="Blog categories">
+            <button class="blog-filter is-active" data-filter="all" type="button">All Posts</button>
+            <button class="blog-filter" data-filter="zld" type="button">ZLD</button>
+            <button class="blog-filter" data-filter="evaporation" type="button">Evaporation</button>
+            <button class="blog-filter" data-filter="ro-reject" type="button">RO Reject</button>
+            <button class="blog-filter" data-filter="leachate" type="button">Leachate</button>
+            <button class="blog-filter" data-filter="technology" type="button">Technology</button>
+            <button class="blog-filter" data-filter="integrated-solutions" type="button">Integrated Solutions</button>
+            <button class="blog-filter" data-filter="maintenance" type="button">Maintenance</button>
+          </div>
+          <div class="blog-search-wrap">
+            <input id="blogSearch" class="blog-search" type="search" placeholder="Search articles" aria-label="Search articles" />
+          </div>
+        </div>
+      </div>
+    </section>
+
     <section class="section" aria-label="All posts">
       <div class="container">
-        <div class="blog-grid">
+        <div id="blogGrid" class="blog-grid">
 
-          <a class="blog-card reveal" href="/blog/etp-compliance-2026.html">
+          <a class="blog-card reveal" data-category="zld" href="/blog/etp-compliance-2026.html">
             <div class="blog-card-media">
               <img src="/img/blog/blog-01.jpg" alt="Industrial water treatment system" loading="lazy" decoding="async" />
               <span class="blog-card-tag">Water Pollution</span>
@@ -51,7 +71,7 @@
             </div>
           </a>
 
-          <a class="blog-card reveal" href="/blog/hazardous-waste-playbook.html">
+          <a class="blog-card reveal" data-category="technology" href="/blog/hazardous-waste-playbook.html">
             <div class="blog-card-media">
               <img src="/img/blog/blog-02.jpg" alt="Industrial safety and hazardous material handling" loading="lazy" decoding="async" />
               <span class="blog-card-tag">Hazardous Waste</span>
@@ -66,7 +86,7 @@
             </div>
           </a>
 
-          <a class="blog-card reveal" href="/blog/solar-bio-hybrid.html">
+          <a class="blog-card reveal" data-category="integrated-solutions" href="/blog/solar-bio-hybrid.html">
             <div class="blog-card-media">
               <img src="/img/blog/blog-03.jpg" alt="Renewable hybrid energy infrastructure" loading="lazy" decoding="async" />
               <span class="blog-card-tag">Non-Conventional Energy</span>
@@ -81,7 +101,7 @@
             </div>
           </a>
 
-          <a class="blog-card reveal" href="/blog/solid-waste-urban-india.html">
+          <a class="blog-card reveal" data-category="technology" href="/blog/solid-waste-urban-india.html">
             <div class="blog-card-media">
               <img src="/img/blog/blog-04.jpg" alt="Solid waste handling facility" loading="lazy" decoding="async" />
               <span class="blog-card-tag">Solid Waste</span>
@@ -96,7 +116,7 @@
             </div>
           </a>
 
-          <a class="blog-card reveal" href="/blog/om-contracts-that-keep-plants-compliant.html">
+          <a class="blog-card reveal" data-category="maintenance" href="/blog/om-contracts-that-keep-plants-compliant.html">
             <div class="blog-card-media">
               <img src="/img/blog/blog-05.jpg" alt="Industrial plant operations and maintenance" loading="lazy" decoding="async" />
               <span class="blog-card-tag">Operation &amp; Maintenance</span>
@@ -111,7 +131,7 @@
             </div>
           </a>
 
-          <a class="blog-card reveal" href="/blog/eia-demystified.html">
+          <a class="blog-card reveal" data-category="technology" href="/blog/eia-demystified.html">
             <div class="blog-card-media">
               <img src="/img/blog/blog-06.jpg" alt="Environmental engineering planning and audit" loading="lazy" decoding="async" />
               <span class="blog-card-tag">Environmental General</span>
@@ -126,7 +146,7 @@
             </div>
           </a>
 
-          <a class="blog-card reveal" href="/blog/treatability-studies.html">
+          <a class="blog-card reveal" data-category="ro-reject" href="/blog/treatability-studies.html">
             <div class="blog-card-media">
               <img src="/img/blog/blog-07.jpg" alt="Water sample testing in laboratory" loading="lazy" decoding="async" />
               <span class="blog-card-tag">Water Pollution</span>
@@ -141,7 +161,7 @@
             </div>
           </a>
 
-          <a class="blog-card reveal" href="/blog/cooling-tower-water-loss.html">
+          <a class="blog-card reveal" data-category="evaporation" href="/blog/cooling-tower-water-loss.html">
             <div class="blog-card-media">
               <img src="/img/blog/blog-08.jpg" alt="Cooling tower and industrial utility lines" loading="lazy" decoding="async" />
               <span class="blog-card-tag">Operation &amp; Maintenance</span>
@@ -156,7 +176,7 @@
             </div>
           </a>
 
-          <a class="blog-card reveal" href="/blog/ohs-30-day-roadmap.html">
+          <a class="blog-card reveal" data-category="maintenance" href="/blog/ohs-30-day-roadmap.html">
             <div class="blog-card-media">
               <img src="/img/blog/blog-09.jpg" alt="Occupational health and safety team at site" loading="lazy" decoding="async" />
               <span class="blog-card-tag">Occupational Health &amp; Safety</span>
@@ -171,7 +191,7 @@
             </div>
           </a>
 
-          <a class="blog-card reveal" href="/blog/environmental-systems-audit.html">
+          <a class="blog-card reveal" data-category="technology" href="/blog/environmental-systems-audit.html">
             <div class="blog-card-media">
               <img src="/img/blog/blog-10.jpg" alt="Industrial environmental systems review" loading="lazy" decoding="async" />
               <span class="blog-card-tag">Environmental General</span>
@@ -186,7 +206,7 @@
             </div>
           </a>
 
-          <a class="blog-card reveal" href="/blog/zero-liquid-discharge-practical-guide.html">
+          <a class="blog-card reveal" data-category="zld" href="/blog/zero-liquid-discharge-practical-guide.html">
             <div class="blog-card-media">
               <img src="/img/blog/blog-11.jpg" alt="Zero liquid discharge process equipment" loading="lazy" decoding="async" />
               <span class="blog-card-tag">Water Pollution</span>
@@ -201,7 +221,7 @@
             </div>
           </a>
 
-          <a class="blog-card reveal" href="/blog/stack-emission-monitoring-basics.html">
+          <a class="blog-card reveal" data-category="technology" href="/blog/stack-emission-monitoring-basics.html">
             <div class="blog-card-media">
               <img src="/img/blog/blog-12.jpg" alt="Stack emission monitoring setup" loading="lazy" decoding="async" />
               <span class="blog-card-tag">Air Quality</span>
@@ -216,7 +236,7 @@
             </div>
           </a>
 
-          <a class="blog-card reveal" href="/blog/rainwater-harvesting-for-industrial-sites.html">
+          <a class="blog-card reveal" data-category="integrated-solutions" href="/blog/rainwater-harvesting-for-industrial-sites.html">
             <div class="blog-card-media">
               <img src="/img/blog/blog-13.jpg" alt="Rainwater harvesting at industrial campus" loading="lazy" decoding="async" />
               <span class="blog-card-tag">Water Conservation</span>
@@ -231,7 +251,7 @@
             </div>
           </a>
 
-          <a class="blog-card reveal" href="/blog/boiler-blowdown-optimization.html">
+          <a class="blog-card reveal" data-category="evaporation" href="/blog/boiler-blowdown-optimization.html">
             <div class="blog-card-media">
               <img src="/img/blog/blog-14.jpg" alt="Boiler utility optimization controls" loading="lazy" decoding="async" />
               <span class="blog-card-tag">Operation &amp; Maintenance</span>
@@ -246,7 +266,7 @@
             </div>
           </a>
 
-          <a class="blog-card reveal" href="/blog/compressed-air-energy-audit.html">
+          <a class="blog-card reveal" data-category="technology" href="/blog/compressed-air-energy-audit.html">
             <div class="blog-card-media">
               <img src="/img/blog/blog-15.jpg" alt="Compressed air energy audit in factory" loading="lazy" decoding="async" />
               <span class="blog-card-tag">Energy Conservation</span>
@@ -261,7 +281,7 @@
             </div>
           </a>
 
-          <a class="blog-card reveal" href="/blog/ro-reject-water-reuse-strategies.html">
+          <a class="blog-card reveal" data-category="ro-reject" href="/blog/ro-reject-water-reuse-strategies.html">
             <div class="blog-card-media">
               <img src="/img/blog/blog-16.jpg" alt="RO reject water reuse strategy" loading="lazy" decoding="async" />
               <span class="blog-card-tag">Water Pollution</span>
@@ -276,7 +296,7 @@
             </div>
           </a>
 
-          <a class="blog-card reveal" href="/blog/sludge-handling-and-dewatering.html">
+          <a class="blog-card reveal" data-category="leachate" href="/blog/sludge-handling-and-dewatering.html">
             <div class="blog-card-media">
               <img src="/img/blog/blog-17.jpg" alt="Sludge handling and dewatering operations" loading="lazy" decoding="async" />
               <span class="blog-card-tag">Hazardous Waste</span>
@@ -291,7 +311,7 @@
             </div>
           </a>
 
-          <a class="blog-card reveal" href="/blog/permit-to-operate-renewal-checklist.html">
+          <a class="blog-card reveal" data-category="integrated-solutions" href="/blog/permit-to-operate-renewal-checklist.html">
             <div class="blog-card-media">
               <img src="/img/blog/blog-18.jpg" alt="Permit to operate compliance documentation" loading="lazy" decoding="async" />
               <span class="blog-card-tag">Environmental General</span>
@@ -306,7 +326,7 @@
             </div>
           </a>
 
-          <a class="blog-card reveal" href="/blog/contractor-safety-management-system.html">
+          <a class="blog-card reveal" data-category="maintenance" href="/blog/contractor-safety-management-system.html">
             <div class="blog-card-media">
               <img src="/img/blog/blog-19.jpg" alt="Contractor safety management on industrial site" loading="lazy" decoding="async" />
               <span class="blog-card-tag">Occupational Health &amp; Safety</span>
@@ -321,7 +341,7 @@
             </div>
           </a>
 
-          <a class="blog-card reveal" href="/blog/incident-investigation-root-cause-method.html">
+          <a class="blog-card reveal" data-category="maintenance" href="/blog/incident-investigation-root-cause-method.html">
             <div class="blog-card-media">
               <img src="/img/blog/blog-20.jpg" alt="Incident investigation and root cause workshop" loading="lazy" decoding="async" />
               <span class="blog-card-tag">Occupational Health &amp; Safety</span>
@@ -332,6 +352,136 @@
               </div>
               <h3>Incident investigation: choosing a root-cause method your team will use</h3>
               <p>When to use 5-Why, fishbone, or barrier analysis — and how to convert findings into durable corrective actions.</p>
+              <span class="blog-card-link">Read the article</span>
+            </div>
+          </a>
+
+          <a class="blog-card reveal" data-category="zld" href="/blog/complete-zld-guide-2027.html">
+            <div class="blog-card-media">
+              <img src="/img/blog/blog-21.jpg" alt="Zero liquid discharge systems at industrial plant" loading="lazy" decoding="async" />
+              <span class="blog-card-tag">ZLD</span>
+            </div>
+            <div class="blog-card-body">
+              <div class="blog-card-meta"><span>30 Oct 2025</span><span class="dot"></span><span>8 min read</span></div>
+              <h3>Complete ZLD guide 2027 for industrial utilities teams</h3>
+              <p>A practical handbook for scoping, phasing, and operating ZLD systems under changing compliance and reuse targets.</p>
+              <span class="blog-card-link">Read the article</span>
+            </div>
+          </a>
+
+          <a class="blog-card reveal" data-category="zld" href="/blog/high-tds-effluent-zld-roadmap.html">
+            <div class="blog-card-media">
+              <img src="/img/blog/blog-22.jpg" alt="High TDS effluent treatment infrastructure" loading="lazy" decoding="async" />
+              <span class="blog-card-tag">ZLD</span>
+            </div>
+            <div class="blog-card-body">
+              <div class="blog-card-meta"><span>22 Oct 2025</span><span class="dot"></span><span>7 min read</span></div>
+              <h3>High-TDS effluent and ZLD roadmap for Indian plants</h3>
+              <p>How to stage concentration and reuse decisions when your plant has variable loads and strict discharge restrictions.</p>
+              <span class="blog-card-link">Read the article</span>
+            </div>
+          </a>
+
+          <a class="blog-card reveal" data-category="evaporation" href="/blog/mvr-vs-non-thermal-evaporation.html">
+            <div class="blog-card-media">
+              <img src="/img/blog/blog-23.jpg" alt="Industrial evaporation equipment and tanks" loading="lazy" decoding="async" />
+              <span class="blog-card-tag">Evaporation</span>
+            </div>
+            <div class="blog-card-body">
+              <div class="blog-card-meta"><span>14 Oct 2025</span><span class="dot"></span><span>6 min read</span></div>
+              <h3>MVR vs non-thermal evaporation: selection logic for 2027 projects</h3>
+              <p>A comparison framework based on feed quality, operating cost, maintenance profile, and utility integration constraints.</p>
+              <span class="blog-card-link">Read the article</span>
+            </div>
+          </a>
+
+          <a class="blog-card reveal" data-category="evaporation" href="/blog/evaporation-rate-design-factors.html">
+            <div class="blog-card-media">
+              <img src="/img/blog/blog-24.jpg" alt="Steam and industrial piping for evaporation" loading="lazy" decoding="async" />
+              <span class="blog-card-tag">Evaporation</span>
+            </div>
+            <div class="blog-card-body">
+              <div class="blog-card-meta"><span>06 Oct 2025</span><span class="dot"></span><span>5 min read</span></div>
+              <h3>Evaporation rate and design factors engineers should not ignore</h3>
+              <p>Key process variables that materially impact evaporation throughput, scaling tendency, and long-term operating stability.</p>
+              <span class="blog-card-link">Read the article</span>
+            </div>
+          </a>
+
+          <a class="blog-card reveal" data-category="ro-reject" href="/blog/ro-reject-treatment-guide-2027.html">
+            <div class="blog-card-media">
+              <img src="/img/blog/blog-25.jpg" alt="RO reject treatment skids and filtration units" loading="lazy" decoding="async" />
+              <span class="blog-card-tag">RO Reject</span>
+            </div>
+            <div class="blog-card-body">
+              <div class="blog-card-meta"><span>29 Sep 2025</span><span class="dot"></span><span>6 min read</span></div>
+              <h3>RO reject treatment guide for high-recovery industrial systems</h3>
+              <p>Practical treatment trains to reduce reject volume while keeping membrane reliability and downstream operations predictable.</p>
+              <span class="blog-card-link">Read the article</span>
+            </div>
+          </a>
+
+          <a class="blog-card reveal" data-category="leachate" href="/blog/leachate-treatment-guide-2027.html">
+            <div class="blog-card-media">
+              <img src="/img/blog/blog-26.jpg" alt="Leachate handling and treatment facility" loading="lazy" decoding="async" />
+              <span class="blog-card-tag">Leachate</span>
+            </div>
+            <div class="blog-card-body">
+              <div class="blog-card-meta"><span>21 Sep 2025</span><span class="dot"></span><span>7 min read</span></div>
+              <h3>Leachate treatment guide for municipal and industrial operators</h3>
+              <p>How to manage variable-strength leachate streams with robust pretreatment, biological control, and polishing stages.</p>
+              <span class="blog-card-link">Read the article</span>
+            </div>
+          </a>
+
+          <a class="blog-card reveal" data-category="technology" href="/blog/zld-cost-comparison-thermal-vs-nonthermal.html">
+            <div class="blog-card-media">
+              <img src="/img/blog/blog-27.jpg" alt="Industrial technology and cost planning visuals" loading="lazy" decoding="async" />
+              <span class="blog-card-tag">Technology</span>
+            </div>
+            <div class="blog-card-body">
+              <div class="blog-card-meta"><span>12 Sep 2025</span><span class="dot"></span><span>6 min read</span></div>
+              <h3>ZLD cost comparison: thermal vs non-thermal technology choices</h3>
+              <p>A planning view of CAPEX, OPEX, manpower load, and reliability trade-offs across two common ZLD implementation paths.</p>
+              <span class="blog-card-link">Read the article</span>
+            </div>
+          </a>
+
+          <a class="blog-card reveal" data-category="technology" href="/blog/capex-opex-industrial-water-recycling.html">
+            <div class="blog-card-media">
+              <img src="/img/blog/blog-28.jpg" alt="Industrial water recycling economics context" loading="lazy" decoding="async" />
+              <span class="blog-card-tag">Technology</span>
+            </div>
+            <div class="blog-card-body">
+              <div class="blog-card-meta"><span>04 Sep 2025</span><span class="dot"></span><span>5 min read</span></div>
+              <h3>CAPEX and OPEX benchmarks for industrial water recycling projects</h3>
+              <p>A simple financial lens to compare reuse architectures and avoid underestimating lifecycle operating requirements.</p>
+              <span class="blog-card-link">Read the article</span>
+            </div>
+          </a>
+
+          <a class="blog-card reveal" data-category="integrated-solutions" href="/blog/zld-systems-overview-integrated.html">
+            <div class="blog-card-media">
+              <img src="/img/blog/blog-29.jpg" alt="Integrated ZLD system layout and process links" loading="lazy" decoding="async" />
+              <span class="blog-card-tag">Integrated Solutions</span>
+            </div>
+            <div class="blog-card-body">
+              <div class="blog-card-meta"><span>27 Aug 2025</span><span class="dot"></span><span>6 min read</span></div>
+              <h3>ZLD systems overview: integrating treatment blocks for reliability</h3>
+              <p>How to sequence modules so the full ZLD train remains resilient during variable feed quality and utility disruptions.</p>
+              <span class="blog-card-link">Read the article</span>
+            </div>
+          </a>
+
+          <a class="blog-card reveal" data-category="maintenance" href="/blog/atm-field-maintenance-checklist.html">
+            <div class="blog-card-media">
+              <img src="/img/blog/blog-30.jpg" alt="Field maintenance checklist on industrial equipment" loading="lazy" decoding="async" />
+              <span class="blog-card-tag">Maintenance</span>
+            </div>
+            <div class="blog-card-body">
+              <div class="blog-card-meta"><span>20 Aug 2025</span><span class="dot"></span><span>5 min read</span></div>
+              <h3>ATM field maintenance checklist for process uptime stability</h3>
+              <p>An execution-focused checklist for field teams to reduce avoidable downtime and maintain treatment efficiency.</p>
               <span class="blog-card-link">Read the article</span>
             </div>
           </a>
@@ -358,5 +508,6 @@
   <div id="site-footer"></div>
 
   <script src="/js/main.js" defer></script>
+  <script src="/js/blog-toolbar.js" defer></script>
 </body>
 </html>
