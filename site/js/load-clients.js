@@ -1,23 +1,24 @@
 // Client logos data
 const clientLogos = [
-    { name: 'Thermax', logo: '/img/clients/thermax.svg' },
-    { name: 'Ion Exchange', logo: '/img/clients/ion-exchange.svg' },
-    { name: 'Mannesmann', logo: '/img/clients/mannesmann.svg' },
-    { name: 'Aquatech', logo: '/img/clients/aquatech.svg' },
-    { name: 'Reliance Industries', logo: '/img/clients/reliance.svg' },
-    { name: 'JSW', logo: '/img/clients/jsw.svg' },
-    { name: 'GE', logo: '/img/clients/ge.svg' },
-    { name: 'Arvind', logo: '/img/clients/arvind.svg' },
-    { name: 'ESSAR', logo: '/img/clients/essar.svg' },
-    { name: 'CGPL', logo: '/img/clients/cgpl.svg' },
-    { name: 'TATA Power', logo: '/img/clients/tata-power.svg' },
-    { name: 'Kandla Port Trust', logo: '/img/clients/kandla-port.svg' }
+    { name: 'Thermax', logo: '/img/clients/client-01.png' },
+    { name: 'Ion Exchange', logo: '/img/clients/client-02.png' },
+    { name: 'Mannesmann', logo: '/img/clients/client-03.png' },
+    { name: 'Aquatech', logo: '/img/clients/client-04.png' },
+    { name: 'Reliance Industries', logo: '/img/clients/client-05.png' },
+    { name: 'JSW', logo: '/img/clients/client-06.png' },
+    { name: 'GE', logo: '/img/clients/client-07.png' },
+    { name: 'Arvind', logo: '/img/clients/client-08.png' },
+    { name: 'ESSAR', logo: '/img/clients/client-09.png' },
+    { name: 'CGPL', logo: '/img/clients/client-10.png' },
+    { name: 'TATA Power', logo: '/img/clients/client-11.png' },
+    { name: 'Kandla Port Trust', logo: '/img/clients/client-12.png' }
 ];
 
 // Populate grid
 function loadClientLogos() {
     const grid = document.getElementById('logoGrid');
     if (!grid) return;
+    grid.innerHTML = '';
     
     clientLogos.forEach((client) => {
         const card = document.createElement('div');
