@@ -2,13 +2,10 @@
 const clientLogos = [
     { name: 'Thermax', logo: '/img/clients/client-01.png' },
     { name: 'Ion Exchange', logo: '/img/clients/client-02.png' },
-    { name: 'Mannesmann', logo: '/img/clients/client-03.png' },
     { name: 'Aquatech', logo: '/img/clients/client-04.png' },
     { name: 'Reliance Industries', logo: '/img/clients/client-05.png' },
     { name: 'JSW', logo: '/img/clients/client-06.png' },
-    { name: 'GE', logo: '/img/clients/client-07.png' },
-    { name: 'Arvind', logo: '/img/clients/client-08.png' },
-    { name: 'ESSAR', logo: '/img/clients/client-09.png' },
+    { name: 'General Electric', logo: '/img/clients/client-07.png' },
     { name: 'CGPL', logo: '/img/clients/client-10.png' },
     { name: 'TATA Power', logo: '/img/clients/client-11.png' },
     { name: 'Kandla Port Trust', logo: '/img/clients/client-12.png' }
