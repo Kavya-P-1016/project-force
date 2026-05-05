@@ -1,14 +1,23 @@
 // Client logos data
 const clientLogos = [
-    { name: 'Thermax', logo: '/img/clients/client-01.png' },
-    { name: 'Ion Exchange', logo: '/img/clients/client-02.png' },
-    { name: 'Aquatech', logo: '/img/clients/client-04.png' },
-    { name: 'Reliance Industries', logo: '/img/clients/client-05.png' },
-    { name: 'JSW', logo: '/img/clients/client-06.png' },
-    { name: 'General Electric', logo: '/img/clients/client-07.png' },
-    { name: 'CGPL', logo: '/img/clients/client-10.png' },
-    { name: 'TATA Power', logo: '/img/clients/client-11.png' },
-    { name: 'Kandla Port Trust', logo: '/img/clients/client-12.png' }
+    { name: 'Thermax', logo: '/img/clients/custom/thermax-new-2.png' },
+    { name: 'Ion Exchange', logo: '/img/clients/custom/ion-exchange-new.png' },
+    { name: 'Mannesmann', logo: '/img/clients/custom/mannesmann-new.png' },
+    { name: 'Aquatech', logo: '/img/clients/aquatech-new.png' },
+    { name: 'Reliance Industries', logo: '/img/clients/custom/reliance-new-2.png' },
+    { name: 'JSW', logo: '/img/clients/jsw-new.png' },
+    { name: 'General Electric', logo: '/img/clients/custom/ge-new.png' },
+    { name: 'Arvind', logo: '/img/clients/custom/arvind-new.png' },
+    { name: 'ESSAR', logo: '/img/clients/custom/essar-new.png' },
+    { name: 'CGPL', logo: '/img/clients/custom/cgpl-new-2.png' },
+    { name: 'TATA Power', logo: '/img/clients/custom/tata-power-new-2.png' },
+    { name: 'Kandla Port Trust', logo: '/img/clients/custom/kandla-new.png' },
+    { name: 'ABB', logo: '/img/clients/custom/abb-new.png' },
+    { name: 'NTPC', logo: '/img/clients/custom/ntpc-new.png' },
+    { name: 'Adani', logo: '/img/clients/custom/adani-new-2.png' },
+    { name: 'Somany', logo: '/img/clients/custom/somany-new.png' },
+    { name: 'Indo Dutch', logo: '/img/clients/custom/indo-dutch-new.png' },
+    { name: 'BEIL', logo: '/img/clients/custom/beil-new.png' }
 ];
 
 // Populate grid
