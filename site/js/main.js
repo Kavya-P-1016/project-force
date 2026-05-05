@@ -266,6 +266,56 @@
   }
 
   // -----------------------------------------------------------------------
+  // Services tabs (left list -> right details)
+  // -----------------------------------------------------------------------
+  function initServicesTabs() {
+    const root = document.querySelector('[data-services-tabs]');
+    if (!root) return;
+    const tabs = Array.from(root.querySelectorAll('.services-tab'));
+    const titleEl = document.getElementById('servicesTabTitle');
+    const descEl = document.getElementById('servicesTabDesc');
+    const listEl = document.getElementById('servicesTabList');
+    const imageEl = document.getElementById('servicesTabImage');
+    const linkEl = document.getElementById('servicesTabLink');
+    if (!tabs.length || !titleEl || !descEl || !listEl || !imageEl || !linkEl) return;
+
+    const activate = (tab) => {
+      tabs.forEach((t) => {
+        const active = t === tab;
+        t.classList.toggle('is-active', active);
+        t.setAttribute('aria-selected', active ? 'true' : 'false');
+      });
+
+      titleEl.textContent = tab.dataset.title || '';
+      descEl.textContent = tab.dataset.desc || '';
+      imageEl.src = tab.dataset.image || imageEl.src;
+      imageEl.alt = `${tab.dataset.title || 'Service'} by Project Force`;
+      linkEl.href = tab.dataset.link || '/services.html';
+
+      const points = (tab.dataset.points || '')
+        .split('|')
+        .map((p) => p.trim())
+        .filter(Boolean);
+      listEl.innerHTML = '';
+      points.forEach((point) => {
+        const li = document.createElement('li');
+        li.textContent = point;
+        listEl.appendChild(li);
+      });
+    };
+
+    tabs.forEach((tab) => {
+      tab.addEventListener('click', () => activate(tab));
+      tab.addEventListener('keydown', (e) => {
+        if (e.key === 'Enter' || e.key === ' ') {
+          e.preventDefault();
+          activate(tab);
+        }
+      });
+    });
+  }
+
+  // -----------------------------------------------------------------------
   // Accordions
   // -----------------------------------------------------------------------
   function initAccordions() {
@@ -316,6 +366,7 @@
     initLiveNumbers();
     initHeroSlider();
     initAdvCards();
+    initServicesTabs();
     initAccordions();
     initReveal();
   }

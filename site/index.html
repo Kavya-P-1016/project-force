@@ -152,120 +152,30 @@
           <p>Specialized consultancy, engineering, and operation contracts under one roof — from effluent treatment to non-conventional energy.</p>
         </div>
 
-        <div class="grid grid-3">
-          <article class="service-card reveal">
-            <div class="service-card-icon" aria-hidden="true">
-              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
-                <path d="M12 2.5s-6 7-6 11.5a6 6 0 0 0 12 0c0-4.5-6-11.5-6-11.5z"/>
-              </svg>
+        <div class="services-tabs reveal" data-services-tabs>
+          <div class="services-tabs-nav" role="tablist" aria-label="Project Force service domains">
+            <button class="services-tab is-active" type="button" role="tab" aria-selected="true" data-title="Water Pollution Control" data-desc="End-to-end effluent treatment solutions: characterization, feasibility, detailed engineering, and operation contracts for industrial wastewater." data-points="Waste Water Characterization|Treatability Studies|Feasibility Report|Control System Design" data-image="/img/img1.jpg" data-link="/services.html#WaterPollution">Water Pollution Control</button>
+            <button class="services-tab" type="button" role="tab" aria-selected="false" data-title="Operation &amp; Maintenance" data-desc="Long-term O&amp;M contracts for ETP, cooling towers, RO systems, and manpower supply — keeping plants compliant and efficient." data-points="Effluent Treatment Plant O&amp;M|Primary, Secondary &amp; Polishing|Cooling Tower &amp; R.O. Water|Skilled &amp; Un-skilled Manpower" data-image="/img/img2.jpg" data-link="/services.html#OM">Operation &amp; Maintenance</button>
+            <button class="services-tab" type="button" role="tab" aria-selected="false" data-title="Solid Waste Management" data-desc="Comprehensive waste programs for urban and semi-urban areas — characterization, logistics, and disposal system design." data-points="Solid Waste Characterization|Collection &amp; Transportation|Comprehensive Programs|Detailed Engineering" data-image="/img/img3.jpg" data-link="/services.html#SolidWaste">Solid Waste Management</button>
+            <button class="services-tab" type="button" role="tab" aria-selected="false" data-title="Hazardous Waste" data-desc="Safe, compliant handling of hazardous materials — from characterization to disposal system design, aligned with regulatory standards." data-points="Hazardous Waste Characterization|Safe Disposal System" data-image="/img/img4.jpg" data-link="/services.html#HW">Hazardous Waste</button>
+            <button class="services-tab" type="button" role="tab" aria-selected="false" data-title="Environmental General" data-desc="Strategic environmental planning: land use studies, EIA, systems audits, and sustainable landscape design." data-points="Land Use Plan Studies|Environmental Impact Assessment|Environment Systems Audit|Eco Landscaping &amp; Gardening" data-image="/img/img5.jpg" data-link="/services.html#EG">Environmental General</button>
+            <button class="services-tab" type="button" role="tab" aria-selected="false" data-title="Non-Conventional Energy" data-desc="Promotion, design, and execution of renewable energy solutions — solar, bio, and wind — tailored to site and scale." data-points="Promotion Programs|Solar Energy|Bio Energy|Wind Energy" data-image="/img/img6.jpg" data-link="/services.html#NCEG">Non-Conventional Energy</button>
+          </div>
+          <article class="services-tabs-panel" role="tabpanel" aria-live="polite">
+            <div class="services-tabs-media">
+              <img id="servicesTabImage" src="/img/img1.jpg" alt="Water Pollution Control by Project Force" loading="lazy" decoding="async" />
             </div>
-            <h3 class="service-card-title">Water Pollution Control</h3>
-            <p class="service-card-desc">End-to-end effluent treatment solutions: characterization, feasibility, detailed engineering, and operation contracts for industrial wastewater.</p>
-            <ul class="service-card-list">
-              <li>Waste Water Characterization</li>
-              <li>Treatability Studies</li>
-              <li>Feasibility Report</li>
-              <li>Control System Design</li>
-            </ul>
-            <a href="/services.html#WaterPollution" class="card-link">View all services</a>
-          </article>
-
-          <article class="service-card reveal">
-            <div class="service-card-icon" aria-hidden="true">
-              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
-                <circle cx="12" cy="12" r="3"/>
-                <path d="M19.4 15a1.7 1.7 0 0 0 .3 1.8l.1.1a2 2 0 1 1-2.8 2.8l-.1-.1a1.7 1.7 0 0 0-1.8-.3 1.7 1.7 0 0 0-1 1.5V21a2 2 0 0 1-4 0v-.1a1.7 1.7 0 0 0-1.1-1.5 1.7 1.7 0 0 0-1.8.3l-.1.1a2 2 0 1 1-2.8-2.8l.1-.1a1.7 1.7 0 0 0 .3-1.8 1.7 1.7 0 0 0-1.5-1H3a2 2 0 0 1 0-4h.1a1.7 1.7 0 0 0 1.5-1.1 1.7 1.7 0 0 0-.3-1.8l-.1-.1a2 2 0 1 1 2.8-2.8l.1.1a1.7 1.7 0 0 0 1.8.3H9a1.7 1.7 0 0 0 1-1.5V3a2 2 0 0 1 4 0v.1a1.7 1.7 0 0 0 1 1.5 1.7 1.7 0 0 0 1.8-.3l.1-.1a2 2 0 1 1 2.8 2.8l-.1.1a1.7 1.7 0 0 0-.3 1.8V9a1.7 1.7 0 0 0 1.5 1H21a2 2 0 0 1 0 4h-.1a1.7 1.7 0 0 0-1.5 1z"/>
-              </svg>
+            <div class="services-tabs-content">
+              <h3 id="servicesTabTitle">Water Pollution Control</h3>
+              <p id="servicesTabDesc">End-to-end effluent treatment solutions: characterization, feasibility, detailed engineering, and operation contracts for industrial wastewater.</p>
+              <ul id="servicesTabList" class="services-tabs-list">
+                <li>Waste Water Characterization</li>
+                <li>Treatability Studies</li>
+                <li>Feasibility Report</li>
+                <li>Control System Design</li>
+              </ul>
+              <a id="servicesTabLink" href="/services.html#WaterPollution" class="btn btn-outline">View all services</a>
             </div>
-            <h3 class="service-card-title">Operation &amp; Maintenance</h3>
-            <p class="service-card-desc">Long-term O&amp;M contracts for ETP, cooling towers, RO systems, and manpower supply — keeping plants compliant and efficient.</p>
-            <ul class="service-card-list">
-              <li>Effluent Treatment Plant O&amp;M</li>
-              <li>Primary, Secondary &amp; Polishing</li>
-              <li>Cooling Tower &amp; R.O. Water</li>
-              <li>Skilled &amp; Un-skilled Manpower</li>
-            </ul>
-            <a href="/services.html#OM" class="card-link">View all services</a>
-          </article>
-
-          <article class="service-card reveal">
-            <div class="service-card-icon" aria-hidden="true">
-              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
-                <path d="M3 6h18"/>
-                <path d="M8 6V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"/>
-                <path d="M19 6l-1 14a2 2 0 0 1-2 2H8a2 2 0 0 1-2-2L5 6"/>
-              </svg>
-            </div>
-            <h3 class="service-card-title">Solid Waste Management</h3>
-            <p class="service-card-desc">Comprehensive waste programs for urban and semi-urban areas — characterization, logistics, and disposal system design.</p>
-            <ul class="service-card-list">
-              <li>Solid Waste Characterization</li>
-              <li>Collection &amp; Transportation</li>
-              <li>Comprehensive Programs</li>
-              <li>Detailed Engineering</li>
-            </ul>
-            <a href="/services.html#SolidWaste" class="card-link">View all services</a>
-          </article>
-
-          <article class="service-card reveal">
-            <div class="service-card-icon" aria-hidden="true">
-              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
-                <path d="M10.3 3.9 2.6 17a2 2 0 0 0 1.7 3h15.4a2 2 0 0 0 1.7-3L13.7 3.9a2 2 0 0 0-3.4 0z"/>
-                <line x1="12" y1="9" x2="12" y2="13"/>
-                <line x1="12" y1="17" x2="12.01" y2="17"/>
-              </svg>
-            </div>
-            <h3 class="service-card-title">Hazardous Waste</h3>
-            <p class="service-card-desc">Safe, compliant handling of hazardous materials — from characterization to disposal system design, aligned with regulatory standards.</p>
-            <ul class="service-card-list">
-              <li>Hazardous Waste Characterization</li>
-              <li>Safe Disposal System</li>
-            </ul>
-            <a href="/services.html#HW" class="card-link">View all services</a>
-          </article>
-
-          <article class="service-card reveal">
-            <div class="service-card-icon" aria-hidden="true">
-              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
-                <circle cx="12" cy="12" r="9"/>
-                <path d="M12 3a9 9 0 0 0 0 18"/>
-                <path d="M3 12h18"/>
-              </svg>
-            </div>
-            <h3 class="service-card-title">Environmental General</h3>
-            <p class="service-card-desc">Strategic environmental planning: land use studies, EIA, systems audits, and sustainable landscape design.</p>
-            <ul class="service-card-list">
-              <li>Land Use Plan Studies</li>
-              <li>Environmental Impact Assessment</li>
-              <li>Environment Systems Audit</li>
-              <li>Eco Landscaping &amp; Gardening</li>
-            </ul>
-            <a href="/services.html#EG" class="card-link">View all services</a>
-          </article>
-
-          <article class="service-card reveal">
-            <div class="service-card-icon" aria-hidden="true">
-              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
-                <circle cx="12" cy="12" r="4"/>
-                <line x1="12" y1="2" x2="12" y2="4"/>
-                <line x1="12" y1="20" x2="12" y2="22"/>
-                <line x1="4.9" y1="4.9" x2="6.3" y2="6.3"/>
-                <line x1="17.7" y1="17.7" x2="19.1" y2="19.1"/>
-                <line x1="2" y1="12" x2="4" y2="12"/>
-                <line x1="20" y1="12" x2="22" y2="12"/>
-                <line x1="4.9" y1="19.1" x2="6.3" y2="17.7"/>
-                <line x1="17.7" y1="6.3" x2="19.1" y2="4.9"/>
-              </svg>
-            </div>
-            <h3 class="service-card-title">Non-Conventional Energy</h3>
-            <p class="service-card-desc">Promotion, design, and execution of renewable energy solutions — solar, bio, and wind — tailored to site and scale.</p>
-            <ul class="service-card-list">
-              <li>Promotion Programs</li>
-              <li>Solar Energy</li>
-              <li>Bio Energy</li>
-              <li>Wind Energy</li>
-            </ul>
-            <a href="/services.html#NCEG" class="card-link">View all services</a>
           </article>
         </div>
       </div>
