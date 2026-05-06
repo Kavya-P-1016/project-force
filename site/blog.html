@@ -13,10 +13,9 @@
   <meta property="og:type" content="website" />
   <link rel="canonical" href="https://projectforce.in/blog.html" />
   <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" />
-  <link rel="stylesheet" href="/css/styles.css" />
+  <link rel="preload" href="/css/styles.css" as="style" />
+  <link rel="stylesheet" href="/css/styles.css" media="print" onload="this.media='all'" />
+  <noscript><link rel="stylesheet" href="/css/styles.css" /></noscript>
 </head>
 <body data-page="blog">
   <a href="#main" class="skip-link">Skip to main content</a>
@@ -54,6 +53,9 @@
 
     <section class="section" aria-label="All posts">
       <div class="container">
+        <div class="blog-results-bar">
+          <p id="blogResultsCount" class="blog-results-count">Showing 40 of 40 articles</p>
+        </div>
         <div id="blogGrid" class="blog-grid">
 
           <a class="blog-card reveal" data-category="zld" href="/blog/etp-compliance-2026.html">
@@ -482,6 +484,136 @@
               <div class="blog-card-meta"><span>20 Aug 2025</span><span class="dot"></span><span>5 min read</span></div>
               <h3>ATM field maintenance checklist for process uptime stability</h3>
               <p>An execution-focused checklist for field teams to reduce avoidable downtime and maintain treatment efficiency.</p>
+              <span class="blog-card-link">Read the article</span>
+            </div>
+          </a>
+
+          <a class="blog-card reveal" data-category="zld" href="/blog/zld-energy-balance-checklist.html">
+            <div class="blog-card-media">
+              <img src="/img/blog/blog-01.jpg" alt="ZLD energy balance planning at industrial plant" loading="lazy" decoding="async" />
+              <span class="blog-card-tag">Water &amp; ZLD</span>
+            </div>
+            <div class="blog-card-body">
+              <div class="blog-card-meta"><span>12 Aug 2025</span><span class="dot"></span><span>6 min read</span></div>
+              <h3>ZLD energy balance checklist before final technology freeze</h3>
+              <p>A practical pre-finalization checklist to validate thermal loads, utility tie-ins, and operating risk in high-recovery ZLD projects.</p>
+              <span class="blog-card-link">Read the article</span>
+            </div>
+          </a>
+
+          <a class="blog-card reveal" data-category="evaporation" href="/blog/multiple-effect-evaporator-control-strategy.html">
+            <div class="blog-card-media">
+              <img src="/img/blog/blog-02.jpg" alt="Multiple effect evaporator process control panel" loading="lazy" decoding="async" />
+              <span class="blog-card-tag">Thermal &amp; Evaporation</span>
+            </div>
+            <div class="blog-card-body">
+              <div class="blog-card-meta"><span>05 Aug 2025</span><span class="dot"></span><span>7 min read</span></div>
+              <h3>Control strategy for multiple-effect evaporators under variable load</h3>
+              <p>How to keep product quality and throughput stable while feed characteristics and steam availability shift across production cycles.</p>
+              <span class="blog-card-link">Read the article</span>
+            </div>
+          </a>
+
+          <a class="blog-card reveal" data-category="ro-reject" href="/blog/ro-reject-blending-decisions.html">
+            <div class="blog-card-media">
+              <img src="/img/blog/blog-03.jpg" alt="RO reject blending and reuse piping network" loading="lazy" decoding="async" />
+              <span class="blog-card-tag">RO Reuse</span>
+            </div>
+            <div class="blog-card-body">
+              <div class="blog-card-meta"><span>29 Jul 2025</span><span class="dot"></span><span>5 min read</span></div>
+              <h3>RO reject blending decisions that reduce downstream failures</h3>
+              <p>Field-tested blending ranges and monitoring thresholds to avoid scaling, upset events, and avoidable shutdowns in reuse lines.</p>
+              <span class="blog-card-link">Read the article</span>
+            </div>
+          </a>
+
+          <a class="blog-card reveal" data-category="leachate" href="/blog/leachate-shock-load-management.html">
+            <div class="blog-card-media">
+              <img src="/img/blog/blog-04.jpg" alt="Leachate treatment tanks and equalization basins" loading="lazy" decoding="async" />
+              <span class="blog-card-tag">Leachate</span>
+            </div>
+            <div class="blog-card-body">
+              <div class="blog-card-meta"><span>22 Jul 2025</span><span class="dot"></span><span>6 min read</span></div>
+              <h3>Managing leachate shock loads without destabilizing biology</h3>
+              <p>Equalization, staged dosing, and control points that protect biological performance when incoming leachate strength spikes unexpectedly.</p>
+              <span class="blog-card-link">Read the article</span>
+            </div>
+          </a>
+
+          <a class="blog-card reveal" data-category="technology" href="/blog/environmental-kpi-dashboards-for-plants.html">
+            <div class="blog-card-media">
+              <img src="/img/blog/blog-05.jpg" alt="Environmental KPI dashboard monitoring screen" loading="lazy" decoding="async" />
+              <span class="blog-card-tag">Compliance Tech</span>
+            </div>
+            <div class="blog-card-body">
+              <div class="blog-card-meta"><span>15 Jul 2025</span><span class="dot"></span><span>5 min read</span></div>
+              <h3>Environmental KPI dashboards plant teams actually use daily</h3>
+              <p>Which leading indicators matter most for compliance and uptime, and how to structure a dashboard that drives operator action.</p>
+              <span class="blog-card-link">Read the article</span>
+            </div>
+          </a>
+
+          <a class="blog-card reveal" data-category="integrated-solutions" href="/blog/epc-om-handover-risk-list.html">
+            <div class="blog-card-media">
+              <img src="/img/blog/blog-06.jpg" alt="EPC and O&M teams in plant handover review" loading="lazy" decoding="async" />
+              <span class="blog-card-tag">Integrated Delivery</span>
+            </div>
+            <div class="blog-card-body">
+              <div class="blog-card-meta"><span>08 Jul 2025</span><span class="dot"></span><span>6 min read</span></div>
+              <h3>EPC-to-O&amp;M handover risk list for smoother plant startup</h3>
+              <p>A structured handover checklist that closes documentation gaps, stabilizes commissioning, and reduces early-life operational risk.</p>
+              <span class="blog-card-link">Read the article</span>
+            </div>
+          </a>
+
+          <a class="blog-card reveal" data-category="maintenance" href="/blog/predictive-maintenance-for-treatment-assets.html">
+            <div class="blog-card-media">
+              <img src="/img/blog/blog-07.jpg" alt="Predictive maintenance checks on treatment equipment" loading="lazy" decoding="async" />
+              <span class="blog-card-tag">Plant O&amp;M</span>
+            </div>
+            <div class="blog-card-body">
+              <div class="blog-card-meta"><span>01 Jul 2025</span><span class="dot"></span><span>7 min read</span></div>
+              <h3>Predictive maintenance for treatment assets with limited budgets</h3>
+              <p>How to prioritize motors, pumps, and rotating equipment for reliability gains without overbuilding your maintenance program.</p>
+              <span class="blog-card-link">Read the article</span>
+            </div>
+          </a>
+
+          <a class="blog-card reveal" data-category="zld" href="/blog/brine-minimization-for-zld-trains.html">
+            <div class="blog-card-media">
+              <img src="/img/blog/blog-08.jpg" alt="Brine minimization process train in ZLD plant" loading="lazy" decoding="async" />
+              <span class="blog-card-tag">Water &amp; ZLD</span>
+            </div>
+            <div class="blog-card-body">
+              <div class="blog-card-meta"><span>24 Jun 2025</span><span class="dot"></span><span>6 min read</span></div>
+              <h3>Brine minimization approaches for tougher ZLD reuse targets</h3>
+              <p>Design and operational levers to reduce brine volume while preserving recovery, reliability, and downstream equipment life.</p>
+              <span class="blog-card-link">Read the article</span>
+            </div>
+          </a>
+
+          <a class="blog-card reveal" data-category="technology" href="/blog/environmental-permit-document-control.html">
+            <div class="blog-card-media">
+              <img src="/img/blog/blog-09.jpg" alt="Environmental permit document control workflow" loading="lazy" decoding="async" />
+              <span class="blog-card-tag">Compliance Tech</span>
+            </div>
+            <div class="blog-card-body">
+              <div class="blog-card-meta"><span>17 Jun 2025</span><span class="dot"></span><span>5 min read</span></div>
+              <h3>Permit document control systems that survive real audits</h3>
+              <p>A documentation model for multi-site operations that improves traceability, response speed, and audit confidence.</p>
+              <span class="blog-card-link">Read the article</span>
+            </div>
+          </a>
+
+          <a class="blog-card reveal" data-category="integrated-solutions" href="/blog/multi-plant-compliance-governance-model.html">
+            <div class="blog-card-media">
+              <img src="/img/blog/blog-10.jpg" alt="Multi-plant environmental governance planning session" loading="lazy" decoding="async" />
+              <span class="blog-card-tag">Integrated Delivery</span>
+            </div>
+            <div class="blog-card-body">
+              <div class="blog-card-meta"><span>10 Jun 2025</span><span class="dot"></span><span>8 min read</span></div>
+              <h3>Building a multi-plant compliance governance model that scales</h3>
+              <p>Operating cadences, accountability layers, and KPI governance structures for organizations running multiple treatment assets.</p>
               <span class="blog-card-link">Read the article</span>
             </div>
           </a>

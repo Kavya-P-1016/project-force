@@ -252,7 +252,11 @@
       card.setAttribute('role', 'button');
       card.setAttribute('tabindex', '0');
       const toggle = () => {
+        // Remove selection from all cards first.
         cards.forEach((c) => c.classList.remove('is-selected'));
+        // Force reflow so the selected animation restarts every time.
+        // eslint-disable-next-line no-unused-expressions
+        card.offsetWidth;
         card.classList.add('is-selected');
       };
       card.addEventListener('click', toggle);

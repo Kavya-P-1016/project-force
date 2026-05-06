@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Blog Article | Project Force</title>
+  <meta name="description" content="Project Force blog article." />
+  <meta name="theme-color" content="#006B5E" />
+  <link rel="canonical" href="https://projectforce.in/blog-post.html" />
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+  <link rel="preload" href="/css/styles.css" as="style" />
+  <link rel="stylesheet" href="/css/styles.css" media="print" onload="this.media='all'" />
+  <noscript><link rel="stylesheet" href="/css/styles.css" /></noscript>
+</head>
+<body data-page="blog">
+  <a href="#main" class="skip-link">Skip to main content</a>
+  <div id="site-nav"></div>
+
+  <main id="main">
+    <header class="page-hero">
+      <div class="container">
+        <span class="section-eyebrow" id="postTag">Insight</span>
+        <h1 id="postTitle">Project Force article.</h1>
+        <p id="postMeta">Latest update from our engineering team.</p>
+      </div>
+    </header>
+
+    <section class="section">
+      <div class="container">
+        <article class="prose" style="max-width: 980px; margin: 0 auto;">
+          <img
+            id="postImage"
+            src="/img/blog/blog-01.jpg"
+            alt="Blog article image"
+            loading="eager"
+            decoding="async"
+            style="width: 100%; border-radius: 14px; margin-bottom: 20px;"
+          />
+          <p id="postExcerpt">This article details practical environmental engineering lessons from field delivery across industry projects.</p>
+          <p>Need a tailored approach for your site? <a href="/contact.html">Talk to Project Force</a> and our team will share a scoped recommendation.</p>
+          <p><a href="/blog.html" class="btn btn-outline">Back to all articles</a></p>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <div id="site-footer"></div>
+
+  <script src="/js/main.js" defer></script>
+  <script>
+    (function () {
+      const params = new URLSearchParams(window.location.search);
+      const byId = (id) => document.getElementById(id);
+
+      const tag = params.get('tag') || 'Insight';
+      const title = params.get('title') || 'Project Force article.';
+      const excerpt = params.get('excerpt') || 'This article details practical environmental engineering lessons from field delivery across industry projects.';
+      const image = params.get('image') || '/img/blog/blog-01.jpg';
+      const alt = params.get('alt') || 'Blog article image';
+      const date = params.get('date') || '';
+      const read = params.get('read') || '';
+
+      byId('postTag').textContent = tag;
+      byId('postTitle').textContent = title;
+      byId('postExcerpt').textContent = excerpt;
+      byId('postImage').src = image;
+      byId('postImage').alt = alt;
+      byId('postMeta').textContent = [date, read].filter(Boolean).join(' • ') || 'Latest update from our engineering team.';
+      document.title = title + ' | Project Force';
+    })();
+  </script>
+</body>
+</html>
