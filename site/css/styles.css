@@ -803,11 +803,14 @@ button { font-family: inherit; }
   grid-template-columns: minmax(260px, 0.92fr) 1.4fr;
   gap: var(--space-xl);
   align-items: stretch;
+  position: relative;
 }
 .services-tabs-nav {
   display: flex;
   flex-direction: column;
   gap: 10px;
+  position: relative;
+  z-index: 3;
 }
 .services-tab {
   width: 100%;
@@ -816,21 +819,35 @@ button { font-family: inherit; }
   border-radius: var(--radius-md);
   padding: 14px 16px;
   text-align: left;
-  color: var(--text-secondary);
+  color: var(--text-primary);
   font: inherit;
-  font-weight: 600;
+  font-weight: 500;
   cursor: pointer;
-  transition: transform var(--dur-base) var(--ease-out), border-color var(--dur-base) var(--ease-out), box-shadow var(--dur-base) var(--ease-out), color var(--dur-base) var(--ease-out), background var(--dur-base) var(--ease-out);
+  position: relative;
+  z-index: 1;
+  pointer-events: auto;
+  touch-action: manipulation;
+  -webkit-tap-highlight-color: transparent;
+  transition: transform var(--dur-base) var(--ease-out), border-color var(--dur-base) var(--ease-out), box-shadow var(--dur-base) var(--ease-out), background var(--dur-base) var(--ease-out);
 }
 .services-tab:hover {
   transform: translateX(3px);
   border-color: rgba(0, 153, 132, 0.35);
+  color: var(--text-primary);
+  background: #ffffff;
+}
+.services-tab:focus-visible {
+  outline: 2px solid var(--green-500);
+  outline-offset: 2px;
+  color: var(--text-primary);
 }
 .services-tab.is-active {
-  color: var(--green-800);
-  border-color: rgba(0, 153, 132, 0.45);
-  background: linear-gradient(135deg, #ffffff 0%, #f1fbf9 100%);
-  box-shadow: 0 8px 22px rgba(0, 107, 94, 0.12);
+  color: var(--text-primary);
+  font-weight: 700;
+  border-color: var(--green-500);
+  border-left-width: 3px;
+  background: #ffffff;
+  box-shadow: var(--shadow-sm);
 }
 .services-tabs-panel {
   display: grid;
@@ -841,6 +858,9 @@ button { font-family: inherit; }
   border-radius: var(--radius-lg);
   padding: var(--space-lg);
   min-height: 440px;
+  position: relative;
+  z-index: 1;
+  isolation: isolate;
 }
 .services-tabs-media {
   border-radius: var(--radius-md);
@@ -2056,7 +2076,7 @@ button { font-family: inherit; }
   width: 100%;
 }
 .adv-card:hover {
-  border-color: var(--green-400);
+  border-color: var(--border-color-mid);
   transform: translateY(-2px);
   box-shadow: var(--shadow-md);
 }
@@ -2084,48 +2104,49 @@ button { font-family: inherit; }
   margin: 0;
 }
 .adv-card.is-selected {
-  border-color: rgba(0, 153, 132, 0.42);
+  border-color: var(--border-color-light);
   background: #ffffff;
+  transform: none;
+  box-shadow: var(--shadow-sm);
+}
+.adv-card.is-selected:hover {
+  border-color: var(--border-color-mid);
   transform: translateY(-2px);
-  box-shadow: 0 12px 28px rgba(0, 107, 94, 0.16);
-  animation: advCardSelect 320ms var(--ease-out);
+  box-shadow: var(--shadow-md);
 }
 .adv-card.is-selected .adv-icon {
   background: var(--color-brand-tint);
   color: var(--green-600);
 }
 
-@keyframes advCardSelect {
-  0% {
-    transform: translateY(0) scale(0.985);
-    box-shadow: 0 0 0 rgba(0, 107, 94, 0);
-  }
-  100% {
-    transform: translateY(-2px) scale(1);
-    box-shadow: 0 12px 28px rgba(0, 107, 94, 0.16);
-  }
-}
-
 /* ---------- Problem cards (hover background + gradient icon) ---------- */
 .problem-card {
   background: var(--color-off-white);
-  border: 1px solid transparent;
+  border: 1px solid var(--border-color-light);
   border-radius: var(--radius-lg);
   padding: var(--space-xl);
-  transition: all var(--dur-base) var(--ease-out);
+  transition: transform var(--dur-base) var(--ease-out), box-shadow var(--dur-base) var(--ease-out), border-color var(--dur-base) var(--ease-out), background var(--dur-base) var(--ease-out);
   height: 100%;
 }
 .problem-card:hover {
-  background: linear-gradient(135deg, var(--green-700) 0%, var(--green-900) 100%);
-  color: rgba(255,255,255,0.9);
-  transform: translateY(-4px);
-  box-shadow: var(--shadow-lg);
+  background: #ffffff;
+  border-color: var(--border-color-mid);
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-md);
 }
-.problem-card:hover h4 { color: white; }
-.problem-card:hover p { color: rgba(255,255,255,0.82); }
+.problem-card:hover h3,
+.problem-card:hover h4 {
+  color: var(--text-primary);
+}
+.problem-card:hover p {
+  color: var(--text-secondary);
+}
+.problem-card:hover .section-eyebrow {
+  color: var(--green-600) !important;
+}
 .problem-card:hover .problem-icon {
-  background: linear-gradient(135deg, #7fe3cf, var(--green-400));
-  color: var(--green-900);
+  background: linear-gradient(135deg, var(--green-50), var(--green-100));
+  color: var(--green-600);
 }
 .problem-icon {
   width: 52px;
@@ -2415,6 +2436,9 @@ button { font-family: inherit; }
   opacity: 1;
   transform: translateY(0);
 }
+.services-tabs.reveal.is-visible {
+  transform: none;
+}
 /* Keep card interaction transforms (hover/selected) working */
 .adv-card.reveal.is-visible {
   opacity: 1;
@@ -2424,6 +2448,9 @@ button { font-family: inherit; }
   transform: translateY(-2px);
 }
 .adv-card.reveal.is-visible.is-selected {
+  transform: none;
+}
+.adv-card.reveal.is-visible.is-selected:hover {
   transform: translateY(-2px);
 }
 @media (prefers-reduced-motion: reduce) {
@@ -2657,10 +2684,10 @@ button { font-family: inherit; }
   grid-row: span 2;
 }
 .hero-bento-tile--main img {
-  object-position: 52% center;
+  object-position: center center;
 }
 .hero-bento-tile:not(.hero-bento-tile--main):not(.hero-bento-tile--accent) img {
-  object-position: center 28%;
+  object-position: center center;
 }
 .hero-bento-tile--accent {
   background: linear-gradient(135deg, var(--green-700) 0%, var(--green-900) 100%);
@@ -2683,16 +2710,20 @@ button { font-family: inherit; }
   font-size: 10px;
   letter-spacing: 1.8px;
   text-transform: uppercase;
-  color: rgba(255,255,255,0.72);
+  color: rgba(255,255,255,0.78) !important;
+  background: transparent !important;
   position: relative;
+  z-index: 1;
 }
 .hero-bento-tile--accent .accent-title {
   font-size: 20px;
   font-weight: 700;
   line-height: 1.4;
   letter-spacing: -0.4px;
-  color: #ffffff;
+  color: #ffffff !important;
+  background: transparent !important;
   position: relative;
+  z-index: 1;
   max-width: 24ch;
 }
 .hero-bento-tile--accent .accent-arrow {
