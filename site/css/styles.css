@@ -1593,13 +1593,61 @@ button { font-family: inherit; }
 }
 .footer-bottom a:hover { color: var(--color-brand-primary); }
 .footer-bottom p { margin: 0; }
+.footer-bottom-links {
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+  gap: 0;
+  flex: 0 0 auto;
+  margin-left: auto;
+  max-width: 100%;
+}
+.footer-bottom-links > a {
+  margin-left: 0;
+  min-height: auto;
+  display: inline;
+  padding: var(--space-xs) 0;
+}
+.footer-legal-sep {
+  color: var(--gray-400);
+  user-select: none;
+  line-height: 1;
+  margin: 0 6px;
+}
+.footer-credits {
+  display: inline-flex;
+  align-items: center;
+  flex-wrap: nowrap;
+  gap: 0;
+  white-space: nowrap;
+}
+.footer-credit {
+  color: var(--gray-500);
+}
+.footer-credits .footer-legal-sep {
+  margin: 0 6px;
+}
+.footer-credit a {
+  margin-left: 0;
+  min-height: auto;
+  display: inline;
+}
 
 @media (max-width: 1024px) {
   .footer-container { grid-template-columns: 1fr 1fr; gap: var(--space-xl); }
+  .footer-bottom-links {
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    row-gap: var(--space-xs);
+  }
 }
 @media (max-width: 600px) {
   .footer-container { grid-template-columns: 1fr; }
   .footer-bottom { flex-direction: column; text-align: center; }
+  .footer-bottom-links {
+    justify-content: center;
+    margin-left: 0;
+  }
 }
 
 /* ---------- Content prose ---------- */
@@ -2340,6 +2388,8 @@ button { font-family: inherit; }
 }
 .footer-light .footer-bottom a { color: var(--gray-700); }
 .footer-light .footer-bottom a:hover { color: var(--color-brand-primary); }
+.footer-light .footer-bottom-links > a { color: var(--gray-700); }
+.footer-light .footer-bottom-links > a:hover { color: var(--color-brand-primary); }
 
 /* Glowing social icons — neutral by default, branded glow on hover */
 .social-icons {
@@ -2546,28 +2596,6 @@ button { font-family: inherit; }
 }
 .hero-signature-inner > * {
   min-width: 0;
-}
-.hero-signature-eyebrow {
-  display: inline-flex;
-  align-items: center;
-  gap: 10px;
-  padding: 8px 14px;
-  background: rgba(0,107,94,0.08);
-  border: 1px solid rgba(0,107,94,0.16);
-  color: var(--green-700);
-  border-radius: 999px;
-  font-size: 11px;
-  letter-spacing: 1.6px;
-  text-transform: uppercase;
-  font-weight: 600;
-}
-.hero-signature-eyebrow::before {
-  content: '';
-  width: 6px;
-  height: 6px;
-  border-radius: 50%;
-  background: var(--green-600);
-  box-shadow: 0 0 0 4px rgba(0,153,132,0.18);
 }
 .hero-signature h1 {
   font-size: clamp(34px, 4.6vw, 58px);
