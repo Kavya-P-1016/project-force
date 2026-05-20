@@ -66,42 +66,6 @@
     search.addEventListener('input', () => {
       updateResults(applyFilter(cards, activeFilter, search.value));
     });
-
-    const openBlogPost = (card, event) => {
-      event.preventDefault();
-      const href = card.getAttribute('href') || '';
-      const slug = href.split('/').pop()?.replace('.html', '') || 'blog-article';
-      const image = card.querySelector('.blog-card-media img');
-      const tag = card.querySelector('.blog-card-tag');
-      const meta = card.querySelectorAll('.blog-card-meta span');
-      const title = card.querySelector('h3');
-      const excerpt = card.querySelector('p');
-
-      const params = new URLSearchParams({
-        slug,
-        image: image?.getAttribute('src') || '',
-        alt: image?.getAttribute('alt') || 'Blog article image',
-        tag: (tag?.textContent || '').trim(),
-        date: (meta[0]?.textContent || '').trim(),
-        read: (meta[2]?.textContent || '').trim(),
-        title: (title?.textContent || '').trim(),
-        excerpt: (excerpt?.textContent || '').trim()
-      });
-
-      window.location.href = `/blog-post.html?${params.toString()}`;
-    };
-
-    // Per-card handler.
-    cards.forEach((card) => {
-      card.addEventListener('click', (event) => openBlogPost(card, event));
-    });
-
-    // Delegated fallback to survive cached/partial DOM states.
-    grid.addEventListener('click', (event) => {
-      const card = event.target.closest('.blog-card');
-      if (!card || !grid.contains(card)) return;
-      openBlogPost(card, event);
-    });
   }
 
   if (document.readyState === 'loading') {

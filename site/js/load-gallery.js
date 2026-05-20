@@ -1,6 +1,6 @@
 /**
  * Project Force — gallery grid
- * Captions matched to each photo in /img/company/
+ * Order: branding first, then manpower, then project photos
  */
 (function () {
   'use strict';
@@ -12,9 +12,29 @@
       title: 'Water, Wastewater & Energy Services',
     },
     {
+      file: '514664379_24020330870993881_3882376744707742587_n.jpg',
+      label: 'Skilled Manpower',
+      title: 'Engineering Team, Ahmedabad',
+    },
+    {
+      file: '514340861_24022110200815948_1402395434632446145_n.jpg',
+      label: 'Skilled Manpower',
+      title: 'Project Force Team at Facility',
+    },
+    {
+      file: '513945246_24020330560993912_4392215560678559175_n.jpg',
+      label: 'Skilled Manpower',
+      title: 'Technical Team at Treatment Plant',
+    },
+    {
       file: '50485335_2112947032158913_3233029738641489920_n.jpg',
-      label: 'Industry Events',
-      title: 'Vibrant Gujarat Global Trade Show',
+      label: 'Skilled Manpower',
+      title: 'Team at Vibrant Gujarat Global Trade Show',
+    },
+    {
+      file: '513576617_24020330940993874_6614442442504378285_n.jpg',
+      label: 'Skilled Manpower',
+      title: 'Team at Plant Tool Board Ceremony',
     },
     {
       file: '513089604_24020457257647909_5877990045707977175_n.jpg',
@@ -37,11 +57,6 @@
       title: 'Blower Room & Control Panel',
     },
     {
-      file: '513576617_24020330940993874_6614442442504378285_n.jpg',
-      label: 'Operation & Maintenance',
-      title: 'Plant Tool Board & Workshop',
-    },
-    {
       file: '513592043_24020457267647908_967975618342989881_n.jpg',
       label: 'Water Pollution Control',
       title: 'Sludge Dewatering Centrifuge',
@@ -59,12 +74,7 @@
     {
       file: '513872915_24020330804327221_4405869466866856108_n.jpg',
       label: 'Environmental General',
-      title: 'Team Site Visit — Industrial Facility',
-    },
-    {
-      file: '513945246_24020330560993912_4392215560678559175_n.jpg',
-      label: 'Operation & Maintenance',
-      title: 'Technical Team at Treatment Plant',
+      title: 'Team Site Visit, Industrial Facility',
     },
     {
       file: '514165890_24020457260981242_5267585220089515768_n.jpg',
@@ -77,29 +87,14 @@
       title: 'Water Treatment Pressure Vessel',
     },
     {
-      file: '514340861_24022110200815948_1402395434632446145_n.jpg',
-      label: 'Project Force',
-      title: 'Project Force Team at Facility',
-    },
-    {
       file: '514548866_24020457277647907_6008565560060576586_n.jpg',
       label: 'Water Pollution Control',
       title: 'Filtration Train & Pipe Rack',
     },
     {
-      file: '514664379_24020330870993881_3882376744707742587_n.jpg',
-      label: 'Project Force',
-      title: 'Engineering Team — Ahmedabad',
-    },
-    {
       file: '514718456_24020457310981237_8633695095944239805_n.jpg',
       label: 'EPC Contracts',
       title: 'Treatment Plant Site Inspection',
-    },
-    {
-      file: 'skin1.jpeg',
-      label: 'Project Force',
-      title: 'Environmental Consultancy',
     },
   ];
 
@@ -117,7 +112,7 @@
 
       const img = document.createElement('img');
       img.src = src;
-      img.alt = `Project Force — ${item.title}`;
+      img.alt = `Project Force, ${item.title}`;
       img.loading = 'lazy';
       img.decoding = 'async';
       img.width = 800;

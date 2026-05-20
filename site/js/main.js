@@ -1,8 +1,6 @@
 /**
- * Project Force — main.js
- * Handles partial injection (nav + footer), navbar scroll state, mobile menu,
- * animated stat counters, hero crossfade slider, interactive adv cards,
- * accordions, and reveal-on-scroll animations.
+ * Project Force, main.js
+ * Handles partial injection (nav + footer), navbar scroll state, mobile menu, * animated stat counters, hero crossfade slider, interactive adv cards, * accordions, and reveal-on-scroll animations.
  *
  * Vanilla ES6+, no dependencies. Safe to load with `defer`.
  */
@@ -147,8 +145,7 @@
           animateNumber(entry.target);
           io.unobserve(entry.target);
         });
-      },
-      { threshold: 0.4 }
+      }, { threshold: 0.4 }
     );
     targets.forEach((el) => io.observe(el));
   }
@@ -304,8 +301,7 @@
             io.unobserve(entry.target);
           }
         });
-      },
-      { threshold: 0.15, rootMargin: '0px 0px -40px 0px' }
+      }, { threshold: 0.15, rootMargin: '0px 0px -40px 0px' }
     );
     targets.forEach((el) => io.observe(el));
   }

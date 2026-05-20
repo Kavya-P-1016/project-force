@@ -2,55 +2,55 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://projectforce.in/</loc>
-    <lastmod>2026-04-21</lastmod>
+    <lastmod>2026-05-20</lastmod>
     <changefreq>monthly</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
     <loc>https://projectforce.in/about.html</loc>
-    <lastmod>2026-04-21</lastmod>
+    <lastmod>2026-05-20</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://projectforce.in/services.html</loc>
-    <lastmod>2026-04-21</lastmod>
+    <lastmod>2026-05-20</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
     <loc>https://projectforce.in/clients.html</loc>
-    <lastmod>2026-04-21</lastmod>
+    <lastmod>2026-05-20</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://projectforce.in/gallery.html</loc>
-    <lastmod>2026-04-21</lastmod>
+    <lastmod>2026-05-20</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://projectforce.in/blog.html</loc>
-    <lastmod>2026-04-21</lastmod>
+    <lastmod>2026-05-20</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://projectforce.in/contact.html</loc>
-    <lastmod>2026-04-21</lastmod>
+    <lastmod>2026-05-20</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
     <loc>https://projectforce.in/privacy-policy.html</loc>
-    <lastmod>2026-04-21</lastmod>
+    <lastmod>2026-05-20</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.3</priority>
   </url>
   <url>
     <loc>https://projectforce.in/terms.html</loc>
-    <lastmod>2026-04-21</lastmod>
+    <lastmod>2026-05-20</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.3</priority>
   </url>
@@ -85,4 +85,14 @@
   <url><loc>https://projectforce.in/blog/capex-opex-industrial-water-recycling.html</loc><lastmod>2025-09-04</lastmod><changefreq>yearly</changefreq><priority>0.5</priority></url>
   <url><loc>https://projectforce.in/blog/zld-systems-overview-integrated.html</loc><lastmod>2025-08-27</lastmod><changefreq>yearly</changefreq><priority>0.5</priority></url>
   <url><loc>https://projectforce.in/blog/atm-field-maintenance-checklist.html</loc><lastmod>2025-08-20</lastmod><changefreq>yearly</changefreq><priority>0.5</priority></url>
+  <url><loc>https://projectforce.in/blog/brine-minimization-for-zld-trains.html</loc><lastmod>2026-05-20</lastmod><changefreq>yearly</changefreq><priority>0.5</priority></url>
+  <url><loc>https://projectforce.in/blog/environmental-kpi-dashboards-for-plants.html</loc><lastmod>2026-05-20</lastmod><changefreq>yearly</changefreq><priority>0.5</priority></url>
+  <url><loc>https://projectforce.in/blog/environmental-permit-document-control.html</loc><lastmod>2026-05-20</lastmod><changefreq>yearly</changefreq><priority>0.5</priority></url>
+  <url><loc>https://projectforce.in/blog/epc-om-handover-risk-list.html</loc><lastmod>2026-05-20</lastmod><changefreq>yearly</changefreq><priority>0.5</priority></url>
+  <url><loc>https://projectforce.in/blog/leachate-shock-load-management.html</loc><lastmod>2026-05-20</lastmod><changefreq>yearly</changefreq><priority>0.5</priority></url>
+  <url><loc>https://projectforce.in/blog/multi-plant-compliance-governance-model.html</loc><lastmod>2026-05-20</lastmod><changefreq>yearly</changefreq><priority>0.5</priority></url>
+  <url><loc>https://projectforce.in/blog/multiple-effect-evaporator-control-strategy.html</loc><lastmod>2026-05-20</lastmod><changefreq>yearly</changefreq><priority>0.5</priority></url>
+  <url><loc>https://projectforce.in/blog/predictive-maintenance-for-treatment-assets.html</loc><lastmod>2026-05-20</lastmod><changefreq>yearly</changefreq><priority>0.5</priority></url>
+  <url><loc>https://projectforce.in/blog/ro-reject-blending-decisions.html</loc><lastmod>2026-05-20</lastmod><changefreq>yearly</changefreq><priority>0.5</priority></url>
+  <url><loc>https://projectforce.in/blog/zld-energy-balance-checklist.html</loc><lastmod>2026-05-20</lastmod><changefreq>yearly</changefreq><priority>0.5</priority></url>
 </urlset>

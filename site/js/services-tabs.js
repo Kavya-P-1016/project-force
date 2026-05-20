@@ -1,5 +1,5 @@
 /**
- * Services tabs — standalone init (home page)
+ * Services tabs, standalone init (home page)
  */
 (function () {
   'use strict';

@@ -5,10 +5,7 @@
   if (!form) return;
 
   const fields = [
-    { id: 'name', label: 'Full name', required: true, min: 2 },
-    { id: 'phone', label: 'Phone number', required: true, pattern: /^[0-9+()\-\s]{7,20}$/ },
-    { id: 'email', label: 'Email address', required: true, pattern: /^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/ },
-    { id: 'message', label: 'Message', required: true, min: 10 }
+    { id: 'name', label: 'Full name', required: true, min: 2 }, { id: 'phone', label: 'Phone number', required: true, pattern: /^[0-9+()\-\s]{7,20}$/ }, { id: 'email', label: 'Email address', required: true, pattern: /^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/ }, { id: 'message', label: 'Message', required: true, min: 10 }
   ];
 
   function showError(id, msg) {
@@ -68,24 +65,12 @@
     }
 
     const data = {
-      name: form.name.value.trim(),
-      company: (form.company.value || '').trim(),
-      phone: form.phone.value.trim(),
-      email: form.email.value.trim(),
-      service: form.service.value,
-      message: form.message.value.trim()
+      name: form.name.value.trim(), company: (form.company.value || '').trim(), phone: form.phone.value.trim(), email: form.email.value.trim(), service: form.service.value, message: form.message.value.trim()
     };
 
     const subject = 'Website enquiry from ' + data.name;
     const body = [
-      'Name: ' + data.name,
-      'Company: ' + (data.company || '-'),
-      'Phone: ' + data.phone,
-      'Email: ' + data.email,
-      'Service: ' + (data.service || '-'),
-      '',
-      'Message:',
-      data.message
+      'Name: ' + data.name, 'Company: ' + (data.company || '-'), 'Phone: ' + data.phone, 'Email: ' + data.email, 'Service: ' + (data.service || '-'), '', 'Message:', data.message
     ].join('\n');
 
     const mailto =
